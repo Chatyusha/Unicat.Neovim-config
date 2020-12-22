@@ -1,0 +1,18 @@
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'vim-jp/vimdoc-ja'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+hook_add = '''
+	let g:deoplete#enable_at_startup = 1
+'''
+
+[[plugins]]
+repo = '/root/Documents/vimscript/plugins/HelloVim'
+
+[[plugins]]
+repo = '/root/Documents/vimscript/plugins/plgMaker'
+
