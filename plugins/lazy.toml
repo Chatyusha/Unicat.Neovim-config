@@ -1,0 +1,16 @@
+[[plugins]]
+repo = 'deoplete-plugins/deoplete-clang'
+hook_add = '''
+source ~/.config/nvim/plugins/opt/deoplete-clang.vim
+'''
+on_ft = ['c', 'cpp', 'cmake']
+depends = ['deoplete.nvim']
+
+[[plugins]]
+repo = 'deoplete-plugins/deoplete-jedi'
+hook_add = '''
+source ~/.config/nvim/plugins/opt/deoplete-jedi.vim
+'''
+on_ft = ['python']
+depends = ['deoplete.nvim']
+

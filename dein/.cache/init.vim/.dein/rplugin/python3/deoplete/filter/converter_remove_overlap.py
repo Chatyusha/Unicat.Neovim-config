@@ -20,11 +20,11 @@ class Filter(Base):
 
     def filter(self, context: UserContext) -> Candidates:
         if not context['next_input']:
-            return context['candidates']  # type: ignore
+            return list(context['candidates'])
         next_input_words = [x for x in re.split(
             r'([a-zA-Z_]+|\W)', context['next_input']) if x]
 
-        # Skip parentheses if close parenthese is found after cursor
+        # Skip parentheses if close parentheses is found after cursor
         cur_pos = self.vim.call('getcurpos')[1:3]
         check_pairs = []
         pair_pos = self.vim.call('searchpairpos', '(', '', ')', 'nW')
@@ -49,7 +49,7 @@ class Filter(Base):
             if 'abbr' not in candidate:
                 candidate['abbr'] = word
             candidate['word'] = word[: -overlap]
-        return context['candidates']  # type: ignore
+        return list(context['candidates'])
 
 
 def overlap_length(left: str, next_input_words: typing.List[str]) -> int:
