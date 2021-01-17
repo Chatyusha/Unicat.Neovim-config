@@ -28,13 +28,16 @@ tnoremap <C-l> <C-\><C-n><C-w>l " }}}
 " {{{ コマンド
 inoremap <C-s> <Esc>:w<CR><Esc>i
 noremap <C-n> :vs<CR>
-noremap <C-t> :vs<CR> :terminal /bin/bash<CR>i
+""noremap <C-t> :vs<CR> :terminal /bin/bash<CR>i
 inoremap <C-t> <Esc>:vs<CR> :terminal /bin/bash<CR>i
 " }}}
 
 "{{{ その他
 tnoremap <Esc> <C-\><C-n>
 inoremap <C-d> <Right><BS>
-noremap <S-e> <C-e>
 "}}}
 
+"{{{ カーソル移動
+inoremap ww <Esc>wwi
+inoremap bb <Esc>bwi
+"}}}

@@ -11,7 +11,19 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'Shougo/neosnippet.vim'
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'deoplete-plugins/deoplete-jedi'
+
+[[plugins]]
 repo = '/root/Documents/vimscript/plugins/HelloVim'
+
+[[plugins]]
+repo = '/root/Documents/vimscript/plugins/vim-ReView'
 
 [[plugins]]
 repo = '/root/Documents/vimscript/plugins/plgMaker'

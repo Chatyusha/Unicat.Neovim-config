@@ -1,31 +1,10 @@
-PATH := ./vim-themis/bin:$(PATH)
-export THEMIS_VIM  := nvim
-export THEMIS_ARGS := -e -s --headless
-export THEMIS_HOME := ./vim-themis
+RPLUGIN_PATH := ./rplugin/python3/deoplete/sources
 
+all: test
 
-install: vim-themis
-	pip install --upgrade -r test/requirements.txt
+test: flake8
 
-install-user: vim-themis
-	pip install --user --upgrade -r test/requirements.txt
+flake8:
+	flake8 rplugin tests
 
-lint:
-	vint --version
-	vint plugin
-	vint autoload
-	flake8 --version
-	flake8 rplugin
-	mypy --version
-	mypy --ignore-missing-imports --follow-imports=skip --strict rplugin/python3/deoplete
-
-test:
-	themis --version
-	themis test/autoload/*
-	pytest --version
-	pytest
-
-vim-themis:
-	git clone --depth 1 https://github.com/thinca/vim-themis $@
-
-.PHONY: install lint test
+.PHONY: test flake8
