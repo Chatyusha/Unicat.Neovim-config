@@ -7,5 +7,11 @@ repo = 'vim-jp/vimdoc-ja'
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
 hook_add = '''
-	let g:deoplete#enable_at_startup = 1
+source ~/.config/nvim/plugins/opt/deoplete.vim
+'''
+
+[[plugins]]
+repo = 'hrsh7th/vim-vsnip'
+hook_add = '''
+source ~/.config/nvim/plugins/opt/vim-vsnip.vim
 '''

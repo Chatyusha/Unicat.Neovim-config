@@ -1,0 +1,25 @@
+{
+	"for": {
+		"prefix": ["for"],
+		"body": [
+			"for(int i=${1:start};i<=${2:counter};i++)",
+			"{",
+			"\t${0:contine}",
+			"}"
+		]
+	},
+	"Class": {
+    "prefix": ["class"],
+    "body": [
+      "/**",
+      " * @author ${VIM:\\$USER}",
+      " */",
+      "class $1 ${2:extends ${3:Parent} }{",
+      "\tconstructor() {",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ],
+    "description": "Class definition template."
+  }
+}
