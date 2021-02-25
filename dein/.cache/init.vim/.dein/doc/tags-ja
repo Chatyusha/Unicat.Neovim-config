@@ -1777,6 +1777,8 @@ $VIM_POSIX	vi_diff.jax	/*$VIM_POSIX*
 09.2	usr_09.jax	/*09.2*
 09.3	usr_09.jax	/*09.3*
 09.4	usr_09.jax	/*09.4*
+0o	eval.jax	/*0o*
+0x	eval.jax	/*0x*
 10.1	usr_10.jax	/*10.1*
 10.2	usr_10.jax	/*10.2*
 10.3	usr_10.jax	/*10.3*
@@ -1988,6 +1990,7 @@ $VIM_POSIX	vi_diff.jax	/*$VIM_POSIX*
 :AdaTagFile	ft_ada.jax	/*:AdaTagFile*
 :AdaTypes	ft_ada.jax	/*:AdaTypes*
 :Arguments	terminal.jax	/*:Arguments*
+:Asm	terminal.jax	/*:Asm*
 :Break	terminal.jax	/*:Break*
 :Cfilter	quickfix.jax	/*:Cfilter*
 :Clear	terminal.jax	/*:Clear*
@@ -2119,6 +2122,7 @@ $VIM_POSIX	vi_diff.jax	/*$VIM_POSIX*
 :bad	windows.jax	/*:bad*
 :badd	windows.jax	/*:badd*
 :ball	windows.jax	/*:ball*
+:balt	windows.jax	/*:balt*
 :bar	cmdline.jax	/*:bar*
 :bd	windows.jax	/*:bd*
 :bdel	windows.jax	/*:bdel*
@@ -2322,6 +2326,9 @@ $VIM_POSIX	vi_diff.jax	/*$VIM_POSIX*
 :debug-name	repeat.jax	/*:debug-name*
 :debugg	repeat.jax	/*:debugg*
 :debuggreedy	repeat.jax	/*:debuggreedy*
+:def	vim9.jax	/*:def*
+:defc	vim9.jax	/*:defc*
+:defcompile	vim9.jax	/*:defcompile*
 :del	change.jax	/*:del*
 :delc	map.jax	/*:delc*
 :delcommand	map.jax	/*:delcommand*
@@ -2348,6 +2355,8 @@ $VIM_POSIX	vi_diff.jax	/*$VIM_POSIX*
 :diffupdate	diff.jax	/*:diffupdate*
 :dig	digraph.jax	/*:dig*
 :digraphs	digraph.jax	/*:digraphs*
+:disa	vim9.jax	/*:disa*
+:disassemble	vim9.jax	/*:disassemble*
 :display	change.jax	/*:display*
 :dj	tagsrch.jax	/*:dj*
 :djump	tagsrch.jax	/*:djump*
@@ -2392,6 +2401,7 @@ $VIM_POSIX	vi_diff.jax	/*$VIM_POSIX*
 :emenu	gui.jax	/*:emenu*
 :en	eval.jax	/*:en*
 :end	eval.jax	/*:end*
+:enddef	vim9.jax	/*:enddef*
 :endf	eval.jax	/*:endf*
 :endfo	eval.jax	/*:endfo*
 :endfor	eval.jax	/*:endfor*
@@ -2412,6 +2422,8 @@ $VIM_POSIX	vi_diff.jax	/*$VIM_POSIX*
 :execute	eval.jax	/*:execute*
 :exi	editing.jax	/*:exi*
 :exit	editing.jax	/*:exit*
+:exp	vim9.jax	/*:exp*
+:export	vim9.jax	/*:export*
 :exu	helphelp.jax	/*:exu*
 :exusage	helphelp.jax	/*:exusage*
 :f	editing.jax	/*:f*
@@ -2432,6 +2444,7 @@ $VIM_POSIX	vi_diff.jax	/*$VIM_POSIX*
 :filter	various.jax	/*:filter*
 :fin	editing.jax	/*:fin*
 :fina	eval.jax	/*:fina*
+:final	vim9.jax	/*:final*
 :finally	eval.jax	/*:finally*
 :find	editing.jax	/*:find*
 :fini	repeat.jax	/*:fini*
@@ -2514,6 +2527,9 @@ $VIM_POSIX	vi_diff.jax	/*$VIM_POSIX*
 :imapclear	map.jax	/*:imapclear*
 :ime	gui.jax	/*:ime*
 :imenu	gui.jax	/*:imenu*
+:imp	vim9.jax	/*:imp*
+:import	vim9.jax	/*:import*
+:import-cycle	vim9.jax	/*:import-cycle*
 :in	insert.jax	/*:in*
 :index	index.jax	/*:index*
 :ino	map.jax	/*:ino*
@@ -3354,6 +3370,7 @@ $VIM_POSIX	vi_diff.jax	/*$VIM_POSIX*
 :up	editing.jax	/*:up*
 :update	editing.jax	/*:update*
 :v	repeat.jax	/*:v*
+:var	vim9.jax	/*:var*
 :ve	various.jax	/*:ve*
 :ver	various.jax	/*:ver*
 :verb	various.jax	/*:verb*
@@ -3368,6 +3385,8 @@ $VIM_POSIX	vi_diff.jax	/*$VIM_POSIX*
 :vie	editing.jax	/*:vie*
 :view	editing.jax	/*:view*
 :vim	quickfix.jax	/*:vim*
+:vim9s	repeat.jax	/*:vim9s*
+:vim9script	repeat.jax	/*:vim9script*
 :vimgrep	quickfix.jax	/*:vimgrep*
 :vimgrepa	quickfix.jax	/*:vimgrepa*
 :vimgrepadd	quickfix.jax	/*:vimgrepadd*
@@ -3880,12 +3899,18 @@ E10	message.jax	/*E10*
 E100	diff.jax	/*E100*
 E101	diff.jax	/*E101*
 E102	diff.jax	/*E102*
+E1023	vim9.jax	/*E1023*
+E1024	vim9.jax	/*E1024*
 E103	diff.jax	/*E103*
 E104	digraph.jax	/*E104*
+E1042	vim9.jax	/*E1042*
 E105	mbyte.jax	/*E105*
+E1050	vim9.jax	/*E1050*
 E107	eval.jax	/*E107*
 E108	eval.jax	/*E108*
 E109	eval.jax	/*E109*
+E1092	vim9.jax	/*E1092*
+E1094	vim9.jax	/*E1094*
 E11	cmdline.jax	/*E11*
 E110	eval.jax	/*E110*
 E1109	eval.jax	/*E1109*
@@ -3901,6 +3926,7 @@ E1136	map.jax	/*E1136*
 E1137	map.jax	/*E1137*
 E114	eval.jax	/*E114*
 E115	eval.jax	/*E115*
+E1155	autocmd.jax	/*E1155*
 E116	eval.jax	/*E116*
 E117	eval.jax	/*E117*
 E118	eval.jax	/*E118*
@@ -4076,7 +4102,6 @@ E274	eval.jax	/*E274*
 E275	textprop.jax	/*E275*
 E276	eval.jax	/*E276*
 E277	remote.jax	/*E277*
-E278	popup.jax	/*E278*
 E279	terminal.jax	/*E279*
 E28	syntax.jax	/*E28*
 E280	if_tcl.jax	/*E280*
@@ -5119,10 +5144,14 @@ VIMINIT	starting.jax	/*VIMINIT*
 VMS	os_vms.jax	/*VMS*
 Vi	intro.jax	/*Vi*
 View	starting.jax	/*View*
+Vim9	vim9.jax	/*Vim9*
+Vim9-script	vim9.jax	/*Vim9-script*
 VimEnter	autocmd.jax	/*VimEnter*
 VimLeave	autocmd.jax	/*VimLeave*
 VimLeavePre	autocmd.jax	/*VimLeavePre*
 VimResized	autocmd.jax	/*VimResized*
+VimResume	autocmd.jax	/*VimResume*
+VimSuspend	autocmd.jax	/*VimSuspend*
 Vimball-copyright	pi_vimball.jax	/*Vimball-copyright*
 Virtual-Replace-mode	insert.jax	/*Virtual-Replace-mode*
 VisVim	if_ole.jax	/*VisVim*
@@ -5665,8 +5694,10 @@ characterwise	motion.jax	/*characterwise*
 characterwise-register	change.jax	/*characterwise-register*
 characterwise-visual	visual.jax	/*characterwise-visual*
 charclass()	eval.jax	/*charclass()*
+charcol()	eval.jax	/*charcol()*
 charconvert_from-variable	eval.jax	/*charconvert_from-variable*
 charconvert_to-variable	eval.jax	/*charconvert_to-variable*
+charidx()	eval.jax	/*charidx()*
 charity	uganda.jax	/*charity*
 charset	mbyte.jax	/*charset*
 charset-conversion	mbyte.jax	/*charset-conversion*
@@ -6167,6 +6198,7 @@ exepath()	eval.jax	/*exepath()*
 exim	starting.jax	/*exim*
 exists()	eval.jax	/*exists()*
 exiting	starting.jax	/*exiting*
+exiting-variable	eval.jax	/*exiting-variable*
 exp()	eval.jax	/*exp()*
 expand()	eval.jax	/*expand()*
 expand-env	options.jax	/*expand-env*
@@ -6244,8 +6276,10 @@ expression-commands	eval.jax	/*expression-commands*
 expression-syntax	eval.jax	/*expression-syntax*
 exrc	starting.jax	/*exrc*
 extend()	eval.jax	/*extend()*
+extendnew()	eval.jax	/*extendnew()*
 extension-removal	cmdline.jax	/*extension-removal*
 f	motion.jax	/*f*
+false	vim9.jax	/*false*
 false-variable	eval.jax	/*false-variable*
 falsy	eval.jax	/*falsy*
 falsy-operator	eval.jax	/*falsy-operator*
@@ -6253,6 +6287,7 @@ faq	intro.jax	/*faq*
 farsi	farsi.jax	/*farsi*
 farsi.txt	farsi.jax	/*farsi.txt*
 fasm.vim	syntax.jax	/*fasm.vim*
+fast-functions	vim9.jax	/*fast-functions*
 fcs_choice-variable	eval.jax	/*fcs_choice-variable*
 fcs_reason-variable	eval.jax	/*fcs_reason-variable*
 feature-list	eval.jax	/*feature-list*
@@ -6286,6 +6321,7 @@ find-replace	usr_10.jax	/*find-replace*
 finddir()	eval.jax	/*finddir()*
 findfile()	eval.jax	/*findfile()*
 flatten()	eval.jax	/*flatten()*
+flattennew()	eval.jax	/*flattennew()*
 flexwiki.vim	syntax.jax	/*flexwiki.vim*
 float-e	eval.jax	/*float-e*
 float-functions	usr_41.jax	/*float-functions*
@@ -6301,7 +6337,26 @@ fname_new-variable	eval.jax	/*fname_new-variable*
 fname_out-variable	eval.jax	/*fname_out-variable*
 fnameescape()	eval.jax	/*fnameescape()*
 fnamemodify()	eval.jax	/*fnamemodify()*
+fo-1	change.jax	/*fo-1*
+fo-2	change.jax	/*fo-2*
+fo-B	change.jax	/*fo-B*
+fo-M	change.jax	/*fo-M*
+fo-]	change.jax	/*fo-]*
+fo-a	change.jax	/*fo-a*
+fo-b	change.jax	/*fo-b*
+fo-c	change.jax	/*fo-c*
+fo-j	change.jax	/*fo-j*
+fo-l	change.jax	/*fo-l*
+fo-m	change.jax	/*fo-m*
+fo-n	change.jax	/*fo-n*
+fo-o	change.jax	/*fo-o*
+fo-p	change.jax	/*fo-p*
+fo-q	change.jax	/*fo-q*
+fo-r	change.jax	/*fo-r*
+fo-t	change.jax	/*fo-t*
 fo-table	change.jax	/*fo-table*
+fo-v	change.jax	/*fo-v*
+fo-w	change.jax	/*fo-w*
 fold-behavior	fold.jax	/*fold-behavior*
 fold-colors	fold.jax	/*fold-colors*
 fold-commands	fold.jax	/*fold-commands*
@@ -6445,7 +6500,7 @@ ft-php-syntax	syntax.jax	/*ft-php-syntax*
 ft-php3-syntax	syntax.jax	/*ft-php3-syntax*
 ft-phtml-syntax	syntax.jax	/*ft-phtml-syntax*
 ft-plaintex-syntax	syntax.jax	/*ft-plaintex-syntax*
-ft-posix-synax	syntax.jax	/*ft-posix-synax*
+ft-posix-syntax	syntax.jax	/*ft-posix-syntax*
 ft-postscr-syntax	syntax.jax	/*ft-postscr-syntax*
 ft-ppwiz-syntax	syntax.jax	/*ft-ppwiz-syntax*
 ft-printcap-syntax	syntax.jax	/*ft-printcap-syntax*
@@ -6514,6 +6569,7 @@ ftplugin-name	usr_05.jax	/*ftplugin-name*
 ftplugin-overrule	filetype.jax	/*ftplugin-overrule*
 ftplugin-special	usr_41.jax	/*ftplugin-special*
 ftplugins	usr_05.jax	/*ftplugins*
+fullcommand()	eval.jax	/*fullcommand()*
 funcref()	eval.jax	/*funcref()*
 function()	eval.jax	/*function()*
 function-argument	eval.jax	/*function-argument*
@@ -6750,6 +6806,7 @@ g:tex_fast	syntax.jax	/*g:tex_fast*
 g:tex_flavor	filetype.jax	/*g:tex_flavor*
 g:tex_fold_enabled	syntax.jax	/*g:tex_fold_enabled*
 g:tex_isk	syntax.jax	/*g:tex_isk*
+g:tex_matchcheck	syntax.jax	/*g:tex_matchcheck*
 g:tex_no_error	syntax.jax	/*g:tex_no_error*
 g:tex_nospell	syntax.jax	/*g:tex_nospell*
 g:tex_stylish	syntax.jax	/*g:tex_stylish*
@@ -6823,6 +6880,7 @@ getbufvar()	eval.jax	/*getbufvar()*
 getchangelist()	eval.jax	/*getchangelist()*
 getchar()	eval.jax	/*getchar()*
 getcharmod()	eval.jax	/*getcharmod()*
+getcharpos()	eval.jax	/*getcharpos()*
 getcharsearch()	eval.jax	/*getcharsearch()*
 getcmdline()	eval.jax	/*getcmdline()*
 getcmdpos()	eval.jax	/*getcmdpos()*
@@ -6830,6 +6888,7 @@ getcmdtype()	eval.jax	/*getcmdtype()*
 getcmdwintype()	eval.jax	/*getcmdwintype()*
 getcompletion()	eval.jax	/*getcompletion()*
 getcurpos()	eval.jax	/*getcurpos()*
+getcursorcharpos()	eval.jax	/*getcursorcharpos()*
 getcwd()	eval.jax	/*getcwd()*
 getenv()	eval.jax	/*getenv()*
 getfontname()	eval.jax	/*getfontname()*
@@ -7488,6 +7547,7 @@ linewise-visual	visual.jax	/*linewise-visual*
 lisp.vim	syntax.jax	/*lisp.vim*
 lispindent()	eval.jax	/*lispindent()*
 list	eval.jax	/*list*
+list-concatenation	eval.jax	/*list-concatenation*
 list-functions	usr_41.jax	/*list-functions*
 list-identity	eval.jax	/*list-identity*
 list-index	eval.jax	/*list-index*
@@ -7814,7 +7874,6 @@ netrw-browser-options	pi_netrw.jax	/*netrw-browser-options*
 netrw-browser-settings	pi_netrw.jax	/*netrw-browser-settings*
 netrw-browser-var	pi_netrw.jax	/*netrw-browser-var*
 netrw-browsing	pi_netrw.jax	/*netrw-browsing*
-netrw-c	pi_netrw.jax	/*netrw-c*
 netrw-c-tab	pi_netrw.jax	/*netrw-c-tab*
 netrw-cB	pi_netrw.jax	/*netrw-cB*
 netrw-cadaver	pi_netrw.jax	/*netrw-cadaver*
@@ -8031,9 +8090,12 @@ notation	intro.jax	/*notation*
 notepad	gui_w32.jax	/*notepad*
 nr2char()	eval.jax	/*nr2char()*
 nroff.vim	syntax.jax	/*nroff.vim*
+null	vim9.jax	/*null*
 null-variable	eval.jax	/*null-variable*
 number_relativenumber	options.jax	/*number_relativenumber*
 numbered-function	eval.jax	/*numbered-function*
+numbermax-variable	eval.jax	/*numbermax-variable*
+numbermin-variable	eval.jax	/*numbermin-variable*
 numbersize-variable	eval.jax	/*numbersize-variable*
 o	insert.jax	/*o*
 o_CTRL-V	motion.jax	/*o_CTRL-V*
@@ -8195,6 +8257,7 @@ popup-callback	popup.jax	/*popup-callback*
 popup-close	popup.jax	/*popup-close*
 popup-examples	popup.jax	/*popup-examples*
 popup-filter	popup.jax	/*popup-filter*
+popup-filter-errors	popup.jax	/*popup-filter-errors*
 popup-filter-mode	popup.jax	/*popup-filter-mode*
 popup-function-details	popup.jax	/*popup-function-details*
 popup-functions	popup.jax	/*popup-functions*
@@ -8435,6 +8498,7 @@ rcp	pi_netrw.jax	/*rcp*
 read-in-close-cb	channel.jax	/*read-in-close-cb*
 read-messages	insert.jax	/*read-messages*
 read-only-share	editing.jax	/*read-only-share*
+readblob()	eval.jax	/*readblob()*
 readdir()	eval.jax	/*readdir()*
 readdirex()	eval.jax	/*readdirex()*
 readfile()	eval.jax	/*readfile()*
@@ -8632,8 +8696,10 @@ set-spc-auto	spell.jax	/*set-spc-auto*
 setbufline()	eval.jax	/*setbufline()*
 setbufvar()	eval.jax	/*setbufvar()*
 setcellwidths()	eval.jax	/*setcellwidths()*
+setcharpos()	eval.jax	/*setcharpos()*
 setcharsearch()	eval.jax	/*setcharsearch()*
 setcmdpos()	eval.jax	/*setcmdpos()*
+setcursorcharpos()	eval.jax	/*setcursorcharpos()*
 setenv()	eval.jax	/*setenv()*
 setfperm()	eval.jax	/*setfperm()*
 setline()	eval.jax	/*setline()*
@@ -8697,6 +8763,7 @@ sinh()	eval.jax	/*sinh()*
 skeleton	autocmd.jax	/*skeleton*
 skip_defaults_vim	starting.jax	/*skip_defaults_vim*
 slice	eval.jax	/*slice*
+slice()	eval.jax	/*slice()*
 slow-fast-terminal	term.jax	/*slow-fast-terminal*
 slow-start	starting.jax	/*slow-start*
 slow-terminal	term.jax	/*slow-terminal*
@@ -8951,8 +9018,10 @@ synstack()	eval.jax	/*synstack()*
 syntax	syntax.jax	/*syntax*
 syntax-functions	usr_41.jax	/*syntax-functions*
 syntax-highlighting	syntax.jax	/*syntax-highlighting*
+syntax-latex	syntax.jax	/*syntax-latex*
 syntax-loading	syntax.jax	/*syntax-loading*
 syntax-printing	usr_06.jax	/*syntax-printing*
+syntax-tex	syntax.jax	/*syntax-tex*
 syntax.txt	syntax.jax	/*syntax.txt*
 syntax_cmd	syntax.jax	/*syntax_cmd*
 sys-file-list	help.jax	/*sys-file-list*
@@ -9309,6 +9378,7 @@ termdebug-prompt	terminal.jax	/*termdebug-prompt*
 termdebug-starting	terminal.jax	/*termdebug-starting*
 termdebug-stepping	terminal.jax	/*termdebug-stepping*
 termdebug-variables	terminal.jax	/*termdebug-variables*
+termdebug_disasm_window	terminal.jax	/*termdebug_disasm_window*
 termdebug_map_K	terminal.jax	/*termdebug_map_K*
 termdebug_popup	terminal.jax	/*termdebug_popup*
 termdebug_shortcuts	terminal.jax	/*termdebug_shortcuts*
@@ -9385,6 +9455,7 @@ tex-cole	syntax.jax	/*tex-cole*
 tex-conceal	syntax.jax	/*tex-conceal*
 tex-error	syntax.jax	/*tex-error*
 tex-folding	syntax.jax	/*tex-folding*
+tex-matchcheck	syntax.jax	/*tex-matchcheck*
 tex-math	syntax.jax	/*tex-math*
 tex-morecommands	syntax.jax	/*tex-morecommands*
 tex-nospell	syntax.jax	/*tex-nospell*
@@ -9437,6 +9508,7 @@ tr()	eval.jax	/*tr()*
 trim()	eval.jax	/*trim()*
 trinary	eval.jax	/*trinary*
 trojan-horse	starting.jax	/*trojan-horse*
+true	vim9.jax	/*true*
 true-variable	eval.jax	/*true-variable*
 trunc()	eval.jax	/*trunc()*
 truthy	eval.jax	/*truthy*
@@ -9448,9 +9520,13 @@ try-nesting	eval.jax	/*try-nesting*
 tutor	usr_01.jax	/*tutor*
 two-engines	pattern.jax	/*two-engines*
 type()	eval.jax	/*type()*
+type-casting	vim9.jax	/*type-casting*
+type-checking	vim9.jax	/*type-checking*
+type-inference	vim9.jax	/*type-inference*
 type-mistakes	tips.jax	/*type-mistakes*
 typecorr-settings	usr_41.jax	/*typecorr-settings*
 typecorr.txt	usr_41.jax	/*typecorr.txt*
+typename()	eval.jax	/*typename()*
 u	undo.jax	/*u*
 uganda	uganda.jax	/*uganda*
 uganda.txt	uganda.jax	/*uganda.txt*
@@ -9554,6 +9630,7 @@ v:errmsg	eval.jax	/*v:errmsg*
 v:errors	eval.jax	/*v:errors*
 v:event	eval.jax	/*v:event*
 v:exception	eval.jax	/*v:exception*
+v:exiting	eval.jax	/*v:exiting*
 v:false	eval.jax	/*v:false*
 v:fcs_choice	eval.jax	/*v:fcs_choice*
 v:fcs_reason	eval.jax	/*v:fcs_reason*
@@ -9577,6 +9654,8 @@ v:mouse_win	eval.jax	/*v:mouse_win*
 v:mouse_winid	eval.jax	/*v:mouse_winid*
 v:none	eval.jax	/*v:none*
 v:null	eval.jax	/*v:null*
+v:numbermax	eval.jax	/*v:numbermax*
+v:numbermin	eval.jax	/*v:numbermin*
 v:numbersize	eval.jax	/*v:numbersize*
 v:oldfiles	eval.jax	/*v:oldfiles*
 v:operator	eval.jax	/*v:operator*
@@ -9743,6 +9822,7 @@ valgrind	debug.jax	/*valgrind*
 values()	eval.jax	/*values()*
 var-functions	usr_41.jax	/*var-functions*
 variable-scope	eval.jax	/*variable-scope*
+variable-types	vim9.jax	/*variable-types*
 variables	eval.jax	/*variables*
 various	various.jax	/*various*
 various-cmds	various.jax	/*various-cmds*
@@ -9788,8 +9868,26 @@ vim-use	intro.jax	/*vim-use*
 vim-variable	eval.jax	/*vim-variable*
 vim.vim	syntax.jax	/*vim.vim*
 vim8	version8.jax	/*vim8*
+vim9	vim9.jax	/*vim9*
+vim9-classes	vim9.jax	/*vim9-classes*
+vim9-const	vim9.jax	/*vim9-const*
+vim9-curly	vim9.jax	/*vim9-curly*
+vim9-declaration	vim9.jax	/*vim9-declaration*
 vim9-declarations	usr_46.jax	/*vim9-declarations*
+vim9-differences	vim9.jax	/*vim9-differences*
+vim9-export	vim9.jax	/*vim9-export*
+vim9-final	vim9.jax	/*vim9-final*
+vim9-gotchas	vim9.jax	/*vim9-gotchas*
+vim9-import	vim9.jax	/*vim9-import*
+vim9-namespace	vim9.jax	/*vim9-namespace*
+vim9-rationale	vim9.jax	/*vim9-rationale*
+vim9-reload	vim9.jax	/*vim9-reload*
+vim9-scopes	vim9.jax	/*vim9-scopes*
 vim9-script-intro	usr_46.jax	/*vim9-script-intro*
+vim9-types	vim9.jax	/*vim9-types*
+vim9-user-command	vim9.jax	/*vim9-user-command*
+vim9.txt	vim9.jax	/*vim9.txt*
+vim9script	vim9.jax	/*vim9script*
 vim:	options.jax	/*vim:*
 vim_announce	intro.jax	/*vim_announce*
 vim_dev	intro.jax	/*vim_dev*

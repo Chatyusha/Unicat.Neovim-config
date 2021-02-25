@@ -193,6 +193,7 @@ ignore_case
 ignore_sources
 		It is a dictionary to decide ignore source names.
 		The key is filetype and the value is source names list.
+		Note: It is disabled in |deoplete#manual_complete()|.
 
 		Default value: {}
 
@@ -348,7 +349,6 @@ sources
 		is "_", the value will be used for default filetypes.  For
 		example, you can load some sources in C++ filetype.  If the
 		value is [], it will load all sources.
-		If the value is [], it will load all sources.
 
 		Default value: {}
 >
@@ -690,11 +690,17 @@ file						    *deoplete-source-file*
 				directory.
 				(default: v:true)
 
+		enable_slash_completion
+				If it is True, file source completes the files
+				when user input "/".
+				(default: v:false)
+
 		force_completion_length
 				The completion length if the input does not
 				contain "/".
 				If it is less than 0, it is disabled.
 				(default: -1)
+
 member						*deoplete-source-member*
 		This source collects members from current buffer.
 

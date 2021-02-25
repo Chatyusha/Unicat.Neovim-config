@@ -4,11 +4,12 @@
 # License: MIT license
 # ============================================================================
 
+from pynvim import Nvim
 import re
 import typing
 
 from deoplete.base.filter import Base
-from deoplete.util import Nvim, UserContext, Candidates
+from deoplete.util import UserContext, Candidates
 
 
 class Filter(Base):
@@ -63,7 +64,7 @@ class Filter(Base):
         return new_candidates
 
     def filter(self, context: UserContext) -> Candidates:
-        preferred_order_attrs = self.get_var(  # type: ignore
+        preferred_order_attrs = self.get_var(
             'attrs_order').get(context['filetype'], [])
         if not context['candidates'] or not preferred_order_attrs:
             return list(context['candidates'])

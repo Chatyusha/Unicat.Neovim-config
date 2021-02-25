@@ -4,21 +4,21 @@
 # License: MIT license
 # ============================================================================
 
+from collections import defaultdict
+from pathlib import Path
+from pynvim import Nvim
 import copy
+import msgpack
 import re
 import sys
 import time
-import msgpack
 import typing
-
-from collections import defaultdict
-from pathlib import Path
 
 from deoplete import logger
 from deoplete.exceptions import SourceInitError
 from deoplete.util import (bytepos2charpos, charpos2bytepos, error, error_tb,
                            import_plugin, get_custom, get_syn_names,
-                           convert2candidates, uniq_list_dict, Nvim)
+                           convert2candidates, uniq_list_dict)
 
 UserContext = typing.Dict[str, typing.Any]
 Candidates = typing.List[typing.Dict[str, typing.Any]]
@@ -239,6 +239,8 @@ class Child(logger.LoggingMixin):
                     source.is_volatile, source.is_async)):
             return self._prev_results[source.name]
 
+        ctx['bufpath'] = context['bufpath']
+        ctx['cwd'] = context['cwd']
         ctx['is_async'] = False
         ctx['is_refresh'] = True
         ctx['max_abbr_width'] = min(source.max_abbr_width,
@@ -451,7 +453,9 @@ class Child(logger.LoggingMixin):
                                'ignore_sources', ft, []))
 
         for source_name, source in self._get_sources().items():
-            if source.filetypes is None or source_name in ignore_sources:
+            if source.filetypes is None or (
+                    source_name in ignore_sources and
+                    context['event'] != 'Manual'):
                 continue
             if context['sources'] and source_name not in context['sources']:
                 continue

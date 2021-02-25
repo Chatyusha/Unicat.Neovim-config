@@ -4,10 +4,11 @@
 # License: MIT license
 # ============================================================================
 
+from pynvim import Nvim
 import typing
 
 from deoplete.base.filter import Base
-from deoplete.util import Nvim, UserContext, Candidates
+from deoplete.util import UserContext, Candidates
 
 
 class Filter(Base):
@@ -21,8 +22,7 @@ class Filter(Base):
         }
 
     def filter(self, context: UserContext) -> Candidates:
-        delimiters: typing.List[str] = self.get_var(  # type: ignore
-            'delimiters')
+        delimiters: typing.List[str] = self.get_var('delimiters')
         for candidate, delimiter in [
                 [x, last_find(x['abbr'], delimiters)]
                 for x in context['candidates']

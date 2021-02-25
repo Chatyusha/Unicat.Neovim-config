@@ -1,3 +1,3 @@
 {'repo': v:val.repo, 'rev': get(v:val, 'rev', '')}
 0
-[{'rev': '', 'repo': '/root/.config/nvim/dein/repos/github.com/Shougo/dein.vim'}, {'rev': '', 'repo': 'Shougo/deoplete.nvim'}, {'rev': '', 'repo': 'deoplete-plugins/deoplete-clang'}, {'rev': '', 'repo': 'deoplete-plugins/deoplete-jedi'}, {'rev': '', 'repo': 'hrsh7th/vim-vsnip'}, {'rev': '', 'repo': 'scrooloose/nerdtree'}, {'rev': '', 'repo': 'vim-jp/vimdoc-ja'}]
+[{'rev': '', 'repo': '/root/.config/nvim/dein/repos/github.com/Shougo/dein.vim'}, {'rev': '', 'repo': '/root/Documents/vimscript/plugins/plgMaker'}, {'rev': '', 'repo': 'Shougo/deoplete.nvim'}, {'rev': '', 'repo': 'deoplete-plugins/deoplete-clang'}, {'rev': '', 'repo': 'deoplete-plugins/deoplete-jedi'}, {'rev': '', 'repo': 'hrsh7th/vim-vsnip'}, {'rev': '', 'repo': 'hrsh7th/vim-vsnip-integ'}, {'rev': '', 'repo': 'scrooloose/nerdtree'}, {'rev': '', 'repo': 'vim-jp/vimdoc-ja'}]
