@@ -1,0 +1,36 @@
+{
+	"Meta":{
+		"prefix":["meta","hoge"],
+		"body":[
+			"${1|hoge,fuga,foo,piyo,hogehoge,fugafuga|}$0"
+		]
+	},
+	"DocClass":{
+		"prefix": ["documentclass", "\\documentclass"],
+		"body":[
+			"\\documentclass[${1}]{${2:article}}"
+		]
+	},
+	"InlineMathExpr":{
+		"prefix": ["$","mathexpression"],
+		"body": [
+			"\\$${1:expression}\\$${2}"
+		]
+	},
+	"Begin": {
+		"prefix":["begin", "\\begin"],
+		"body":[
+			"\\begin{${1:environment}}",
+			"\t$0",
+			"\\end{${1:environment}}"
+		]
+	},
+	"Table": {
+		"prefix":["\\begin{table}", "\\table"],
+		"body":[
+			"\\begin{table}[${1}]",
+			"\t\\centering",
+			""
+		]
+	}
+}

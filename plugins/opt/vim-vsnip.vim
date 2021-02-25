@@ -21,5 +21,5 @@ xmap        s   <Plug>(vsnip-select-text)
 nmap        S   <Plug>(vsnip-cut-text)
 xmap        S   <Plug>(vsnip-cut-text)
 
-let g:vsnip_snippet_dirs = ['~/.config/nvim/snippets']
-let g:vsnip_snippet_dir = '/root/Library/nvim/snippets'
+let g:vsnip_snippet_dirs = ['~/.config/nvim/snippets', ]
+let g:vsnip_snippet_dir = '/root/Library/Neovim/snippets'

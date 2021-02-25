@@ -23,11 +23,11 @@ noremap <C-l> <C-w>l
 tnoremap <C-h> <C-\><C-n><C-w>h
 tnoremap <C-j> <C-\><C-n><C-w>j
 tnoremap <C-k> <C-\><C-n><C-w>k
-tnoremap <C-l> <C-\><C-n><C-w>l " }}}
+tnoremap <C-l> <C-\><C-n><C-w>l 
+" }}}
 
 " {{{ コマンド
-inoremap <C-s> <Esc>:w<CR><Esc>i
-noremap <C-n> :vs<CR>
+noremap <C-n> :tabnew
 noremap <C-t> :vs<CR> :terminal /bin/bash<CR>i
 inoremap <C-t> <Esc>:vs<CR> :terminal /bin/bash<CR>i
 " }}}
@@ -38,3 +38,7 @@ inoremap <C-d> <Right><BS>
 noremap <S-e> <C-e>
 "}}}
 
+"{{{インデント
+inoremap {<CR> {}<Left><CR><Up><Esc>$a<CR>
+inoremap [<CR> []<Left><CR><Up><Esc>$a<CR>
+"}}}

@@ -15,3 +15,7 @@ repo = 'hrsh7th/vim-vsnip'
 hook_add = '''
 source ~/.config/nvim/plugins/opt/vim-vsnip.vim
 '''
+
+[[plugins]]
+repo = 'hrsh7th/vim-vsnip-integ'
+

@@ -21,5 +21,13 @@
       "}"
     ],
     "description": "Class definition template."
-  }
+  },
+	"Indent" : {
+		"prefix": ["{"],
+		"body":[
+			"{",
+			"\t$0\n",
+			"}"
+		]
+	}
 }

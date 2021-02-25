@@ -1,2 +1,2 @@
-let g:python3_host_prog = '/root/Library/Python/versions/pyenv/shims/python3' 
-let g:deoplete#sources#jedi#extra_path = ['/root/Library/Python/versions/pyenv/versions/3.8.0/lib/python38.zip', '/root/Library/Python/versions/pyenv/versions/3.8.0/lib/python3.8', '/root/Library/Python/versions/pyenv/versions/3.8.0/lib/python3.8/lib-dynload', '/root/Library/Python/versions/pyenv/versions/3.8.0/lib/python3.8/site-packages', '_vim_path_'] 
+python3 import sys
+let g:deoplete#sources#jedi#extra_path = execute("python3 print(sys.path)") 
